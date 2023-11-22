@@ -28,11 +28,12 @@ const Home = () => {
       <ScrollView showsHorizontalScrollIndicator={false}>
         <View style={{ flex: 1, padding: SIZES.medium }}>
           <Welcome />
-          <Nearbyjobs />
           <Popularjobs />
+          <Nearbyjobs />
         </View>
       </ScrollView>
     </SafeAreaView>
   );
 };
+
 export default Home;
