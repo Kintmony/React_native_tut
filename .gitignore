@@ -9,6 +9,14 @@ Makefile.in
 .deps/
 .dirstamp
 
+#.gitignore
+
+#Ignore .env files
+.env
+
+#Ignore node_modules directory
+node_modules
+
 # http://www.gnu.org/software/autoconf
 
 autom4te.cache
