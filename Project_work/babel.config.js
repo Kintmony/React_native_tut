@@ -1,3 +1,5 @@
+const env = require("react-native-dotenv");
+
 module.exports = function (api) {
   api.cache(true);
   return {
@@ -6,6 +8,10 @@ module.exports = function (api) {
       "@babel/plugin-proposal-export-namespace-from",
       "react-native-reanimated/plugin",
       require.resolve("expo-router/babel"),
+      ["module:react-native-dotenv", { // Corrected line
+        moduleName: "@env",
+        path: ".env",
+      }],
     ],
   };
 };
